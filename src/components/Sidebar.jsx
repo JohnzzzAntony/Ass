@@ -96,7 +96,12 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <button className="btn btn-ghost" style={{ width: '100%' }} onClick={handleLogout}>
+        <button className="btn btn-ghost" style={{ width: '100%', marginBottom: '10px' }} onClick={() => navigate('/select-entity')}>
+          <RefreshCw size={18} />
+          <span>Switch Entity</span>
+        </button>
+
+        <button className="btn btn-ghost" style={{ width: '100%', color: '#ef4444', borderColor: 'rgba(239, 68, 68, 0.2)' }} onClick={handleLogout}>
           <LogOut size={18} />
           <span>Sign Out</span>
         </button>
